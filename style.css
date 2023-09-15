@@ -1,260 +1,265 @@
-@import url('https://fonts.cdnfonts.com/css/h-halen');
+@import url("https://fonts.cdnfonts.com/css/h-halen");
 /* font-family: 'h Halen', sans-serif; */
 
-@import url('https://fonts.cdnfonts.com/css/gotica-moderna-kk');
+@import url("https://fonts.cdnfonts.com/css/gotica-moderna-kk");
 /* font-family: 'Gotica Moderna KK', sans-serif;
 font-family: 'Gotica Moderna KK Outline', sans-serif;
 font-family: 'Gotica Moderna KK Italic', sans-serif;
 */
 
-@import url('https://fonts.cdnfonts.com/css/mandela-clashinta');
+@import url("https://fonts.cdnfonts.com/css/mandela-clashinta");
 /* font-family: 'Mandela Clashinta', sans-serif; */
-                                                
 
-@media screen and (min-width: 320px){
-    
-*{
+@media screen and (min-width: 320px) {
+  * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-}
-/* navegador */
-nav{
+    text-decoration: none;
+    list-style: none;
+  }
+  /* navegador */
+  nav {
     display: flex;
     justify-content: center;
     box-shadow: 2px 2px 2px #000100;
     width: 100%;
     height: 100px;
-    background-image: linear-gradient(120deg,#1ac556 0%,#12760a 100%);
-    
-}
+    background-image: linear-gradient(120deg, #1ac556 0%, #12760a 100%);
+  }
 
-nav ul{
+  nav ul {
     width: 100%;
     height: 100px;
     list-style: none;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    align-content: center; 
-}
+    align-content: center;
+  }
 
-nav ul li{
+  nav ul li {
     display: inline-block;
+  }
 
-}
-
-nav ul li a{
+  nav ul li a {
     text-decoration: none;
     color: #f7f7f7;
-    font-size: 0,5rem;
-    font-family: 'h Halen', sans-serif;
-    margin-inline: 8px 8px 8px 8px ;
-}
+    font-size: 0, 5rem;
+    font-family: "h Halen", sans-serif;
+    margin-inline: 5px 5px 5px 5px;
+  }
 
-/* contenedor de inicio */
-.container{
+  /* contenedor de inicio */
+  .container {
     width: 100vw;
     height: 100dvh;
-    
-}  
+  }
 
-.containerVideo{
+  .containerVideo {
     width: 100vw;
     height: 100dvh;
     position: relative;
     overflow: hidden;
-}
+  }
 
-.containerVideo video {
+  .containerVideo video {
     position: absolute;
     width: 100vw;
     height: 100dvh;
     object-fit: cover;
     z-index: 1;
-    
-}
+  }
 
-h1 {
+  h1 {
     width: 80%;
-    font-family: 'Gotica Moderna KK', sans-serif;;
-    color:  #f0f0f0;
+    font-family: "Gotica Moderna KK", sans-serif;
+    color: #f0f0f0;
     position: absolute;
     font-size: 90px;
-    top: 20%;
+    top: 10%;
     left: 10%;
     z-index: 2;
     font-weight: 900px;
-  
-} 
- /* sec conocimientos */
+    text-align: center;
+  }
+  /* sec conocimientos */
 
- .seccionConocimiento{
+  .seccionConocimiento {
     width: 100%;
     height: 100%;
-    /* display: flex;
-    flex-direction: column; */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
     padding: 120px 0 80px 0;
     background-image: url(./img/fondoConocimientos.jpg);
     background-position: center;
-    background-size: cover; 
-}
+    background-size: cover;
+  }
 
-.cards{
-    width: 50%;
-    height: 2rem;
+  .cards {
+    width: 35%;
+    height: 4rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 10px 10px;
-    border: solid 1px rgb(10, 159, 92) ;
+    border: solid 1px rgb(10, 159, 92);
     border-radius: 25px;
-    box-shadow: 0px 0px 15px 0px  rgb(56, 234, 178);
+    box-shadow: 0px 0px 15px 0px rgb(56, 234, 178);
     font-size: 20px;
-    color: rgb(24, 101, 47) ;
-    background-color: #c6ea84;
-}
+    color: rgb(24, 101, 47);
+    background-color: #ffffff;
+  }
 
-.cards:hover{
+  .cards:hover {
     border: solid 1px rgb(107, 159, 10);
     box-shadow: none;
     transition: 0.1s;
-    color:  rgb(24, 101, 47);
-} 
+    color: rgb(24, 101, 47);
+  }
 
-.html{
-    color:rgb(229, 77, 38);
+  .html {
+    color: rgb(229, 77, 38);
     font-size: 20px;
-}
+  }
 
-.css{
+  .css {
     color: rgb(61, 143, 198);
     font-size: 20px;
-}
+  }
 
-.js{
+  .js {
     color: rgb(240, 219, 79);
     font-size: 20px;
-}
-.sass{
+  }
+  .sass {
     color: rgb(204, 102, 153);
     font-size: 20px;
-}
-.git{
+  }
+  .git {
     color: rgb(243, 79, 41);
     font-size: 20px;
-}
+  }
 
-.react{
+  .react {
     color: aquamarine;
     font-size: 20px;
-}
+  }
 
-.titulo{
+  .titulo {
     font-size: 30px;
     font-weight: 250px;
     display: flex;
     justify-content: center;
     text-align: center;
-}
+  }
 
-/* sec proyectos */
-.containerProyectos{
+  /* sec proyectos */
+  .containerProyectos {
     display: flex;
     width: 100vw;
     flex-direction: column;
-    background-image: linear-gradient(120deg,#1ac556 0%,#12760a 100%);
-}
+    background-image: linear-gradient(120deg, #1ac556 0%, #12760a 100%);
+  }
 
-.gallery_proyectos img{
+  .gallery_proyectos img {
     width: 80%;
     height: 150px;
     object-fit: cover;
     border-radius: 25px;
     margin-left: 30px;
-}
+  }
 
+  h3 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: 55px;
+    text-decoration: underline;
+    font-family: "h Halen", sans-serif;
+    margin: 20px 20px;
+  }
 
-h3{
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  font-size: 55px;
-  text-decoration: underline;
-  font-family: 'h Halen', sans-serif; ;
-  margin: 20px 20px;
-
-}
-
-.descripcionProyectos{
+  .descripcionProyectos {
     font-size: 25px;
-    font-family: 'h Halen', sans-serif; 
+    font-family: "h Halen", sans-serif;
     display: flex;
     justify-content: center;
     text-align: center;
     color: #f7f7f7;
-}
+  }
 
-/*contactame*/
-.conteiner-contacto{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  /*contactame*/
+  .conteinerContacto {
     width: 100%;
-    justify-content: space-evenly;
-    border: solid 1px  rgb(7, 168, 71);
-    border-radius: 10px;
-    box-shadow:0px 0px 10px 0px  rgb(5, 200, 115);
-    font-size: 20px;
-    color:  rgb(7, 78, 65);
-}
-
-
-.contactame{
     display: flex;
     flex-direction: column;
-    width: 45%;
-    font-weight: 300; 
-    line-height: 35px;
+    align-items: center;
+    flex-wrap: wrap;
+    border: solid 1px rgb(7, 168, 71);
+    box-shadow: 0px 0px 10px 0px rgb(5, 200, 115);
+    font-size: 20px;
+    color: rgb(7, 78, 65);
+    background-color: #e0dd18;
+  }
+
+  .contacto {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    justify-content: space-evenly;
+    border: solid 1px rgb(28, 200, 5);
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgb(3, 152, 60);
+    font-size: 20px;
+    color: rgb(34, 81, 7);
+  }
+
+  .contactame {
+    display: flex;
+    flex-direction: column;
     text-align: justify;
-    padding: 0 20px 0 0;
-}
+    align-items: center;
+    font-weight: 300;
+    width: 90%;
+    margin-top: 30px;
+  }
 
-.margen{
-    margin-top: 30px;  
-}
+  .contactameTitulo {
+    font-size: 2rem;
+  }
 
+  .textoContactame {
+    width: 90%;
+  }
+  .containerLista {
+    display: flex;
+  }
 
-/* iconos redes */
-.lista{
-    list-style: none;
-    font-weight: 400;
-   padding: 20px 0 0 0;
-}
+  /* iconos redes */
 
-.redes{
+  .redes {
     text-decoration: none;
     color: rgb(79, 99, 103);
-}
+    list-style: none;
+    font-weight: 400;
+    padding: 20px 0 0 0;
+  }
 
-.nombre-red:hover{
-    text-decoration: none;
-    color: rgb(122, 158, 159);
-}
-
-.icono-redes{
+  .icono-redes {
     font-size: 30px;
-    color:rgb(7, 87, 58);
+    color: rgb(7, 87, 58);
     background-color: rgb(159, 194, 62);
     width: 50px;
     height: 50px;
     border-radius: 50%;
     text-align: center;
-    padding: 10px 0 0 ;
-}
+    padding: 10px 0 0;
+  }
 
-.icono-redes:hover{
+  .icono-redes:hover {
     color: rgb(68, 88, 15);
     background-color: rgb(85, 254, 139);
     width: 50px;
@@ -262,23 +267,212 @@ h3{
     border-radius: 50%;
     transition: 0.4s;
     text-align: center;
-    padding: 10px 0 0 ;
+    padding: 10px 0 0;
+  }
+  /*formulario contacto*/
+  .escribime {
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .tituloEscribime {
+    font-size: 2rem;
+  }
+
+  .formulario {
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 10px;
+  }
+  .margenDatos {
+    margin-top: 10px;
+  }
+  .datos {
+    display: flex;
+  }
+
+  .campo-nom-y-ap {
+    flex-grow: 1;
+  }
+
+  .campoform,
+  .campoform-nombreyapellido {
+    background-color: rgb(125, 204, 149);
+    border: 0;
+    outline: none;
+    height: 40px;
+    border-radius: 10px;
+    padding-left: 15px;
+    font-size: 15px;
+  }
+
+  .campoform-nombreyapellido {
+    width: 95%;
+  }
+
+  .textarea {
+    background-color: rgb(125, 204, 149);
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    padding: 10px 0 0 15px;
+    font-size: 15px;
+  }
+
+  form label {
+    font-weight: 300;
+    padding-top: 20px;
+    font-size: 20px;
+  }
+
+  form p {
+    font-weight: 300;
+    padding-top: 10px;
+    font-size: 20px;
+  }
+  .camposObl {
+    font-size: 14px;
+  }
+
+  .botones.form {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  .campoform:hover {
+    background-color: rgb(238, 245, 219);
+    box-shadow: 0px 0px 15px 0px rgb(238, 245, 219);
+    transition: 0.2s;
+  }
+
+  .textarea:hover {
+    background-color: rgb(238, 245, 219);
+    box-shadow: 0px 0px 15px 0px rgb(238, 245, 219);
+    transition: 0.2s;
+  }
+
+  .botonesForm {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .botonForm {
+    background-color: rgb(125, 204, 149);
+    color: rgb(238, 245, 219);
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 25px;
+    font-weight: 300;
+    width: 110px;
+    height: 45px;
+    border: 0;
+    outline: none;
+    border-radius: 20px;
+    margin-top: 10px;
+  }
+
+  .botonform:hover {
+    color: rgb(68, 130, 87);
+    background-color: rgb(238, 245, 219);
+    transition: 0.1s;
+  }
+
+  /*footer*/
+
+  footer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 30px 0 0 0;
+    background-image: linear-gradient(120deg, #1ac556 0%, #12760a 100%);
+  }
+
+  footer ul {
+    width: 100%;
+    height: 100px;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center;
+  }
+
+  footer ul li {
+    display: inline-block;
+  }
+
+  footer ul li a {
+    text-decoration: none;
+    color: #f7f7f7;
+    font-size: 0, 5rem;
+    font-family: "h Halen", sans-serif;
+    margin-inline: 20px 20px 5px 5px;
+  }
+  .copyright__margen p {
+    padding: 5% 0;
+  }
 }
 
+@media screen and (min-width: 768px) {
+  nav ul li a {
+    font-size: 25px;
+  }
 
+  h1 {
+    top: 30%;
+  }
 
+  .seccionConocimiento {
+    flex-direction: column;
+    align-items: center;
+  }
 
+  .gallery_proyectos img {
+    width: 80%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 25px;
+    margin-left: 60px;
+    object-position: center;
+  }
+
+  .conteiner_contacto {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    border: solid 1px rgb(7, 168, 71);
+    box-shadow: 0px 0px 10px 0px rgb(5, 200, 115);
+    font-size: 20px;
+    color: rgb(7, 78, 65);
+    background-color: #e0dd18;
+  }
 }
 
+@media screen and (min-width: 1024px) {
+  nav ul li a {
+    font-size: 35px;
+  }
 
+  h1 {
+    top: 20%;
+    font-size: 130px;
+  }
 
+  .gallery_proyectos img {
+    margin-left: 80px;
+  }
 
-
-
-
-
-
-
-
-
-
+  .descripcionProyectos {
+    font-size: 35px;
+    margin: 10px 10px;
+  }
+}
