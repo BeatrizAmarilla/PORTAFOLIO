@@ -202,7 +202,7 @@ font-family: 'Gotica Moderna KK Italic', sans-serif;
     box-shadow: 0px 0px 10px 0px rgb(5, 200, 115);
     font-size: 20px;
     color: rgb(7, 78, 65);
-    background-color: #e0dd18;
+    background-color: #e4e38a;
   }
 
   .contacto {
@@ -248,7 +248,7 @@ font-family: 'Gotica Moderna KK Italic', sans-serif;
     padding: 20px 0 0 0;
   }
 
-  .icono-redes {
+  .iconoRedes {
     font-size: 30px;
     color: rgb(7, 87, 58);
     background-color: rgb(159, 194, 62);
@@ -259,128 +259,132 @@ font-family: 'Gotica Moderna KK Italic', sans-serif;
     padding: 10px 0 0;
   }
 
-  .icono-redes:hover {
+  .iconoRedes:hover {
     color: rgb(68, 88, 15);
     background-color: rgb(85, 254, 139);
     width: 50px;
-    height: 50px;
+    height: 45px;
     border-radius: 50%;
     transition: 0.4s;
     text-align: center;
     padding: 10px 0 0;
   }
   /*formulario contacto*/
-  .escribime {
-    width: 45%;
-    display: flex;
-    flex-direction: column;
-  }
+.escribime{
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  
+}
+.tituloEscribime{
+  font-size: 40px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 30px;
+}
 
-  .tituloEscribime {
-    font-size: 2rem;
-  }
+.formulario{
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-top: 10px;
+}
+.margenForm{
+  margin-top: 10px;
+}
+.datos{
+  display: flex;
+}
 
-  .formulario {
-    height: 90%;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding-top: 10px;
-  }
-  .margenDatos {
-    margin-top: 10px;
-  }
-  .datos {
-    display: flex;
-  }
+.campo-nom-y-ap{
+ flex-grow: 1;    
+}
 
-  .campo-nom-y-ap {
-    flex-grow: 1;
-  }
+.campoForm, .campoform-nombreyapellido{
+  background-color: rgb(53, 187, 129);
+  border: 0;
+  outline: none;
+  height: 40px;
+  border-radius: 10px;
+  padding-left: 15px;
+  font-size: 15px;
+}
 
-  .campoform,
-  .campoform-nombreyapellido {
-    background-color: rgb(125, 204, 149);
-    border: 0;
-    outline: none;
-    height: 40px;
-    border-radius: 10px;
-    padding-left: 15px;
-    font-size: 15px;
-  }
 
-  .campoform-nombreyapellido {
-    width: 95%;
-  }
+.campoform-nombreyapellido{
+  width: 100%;
+}
 
-  .textarea {
-    background-color: rgb(125, 204, 149);
-    border: 0;
-    border-radius: 20px;
-    outline: none;
-    padding: 10px 0 0 15px;
-    font-size: 15px;
-  }
+.textarea{
+  background-color: rgb(53, 187, 129);
+  border: 0;
+  border-radius: 20px;
+  outline: none;
+  padding: 10px 0 0 15px;
+  font-size: 15px;
+}
 
-  form label {
-    font-weight: 300;
-    padding-top: 20px;
-    font-size: 20px;
-  }
+form label{
+  font-weight: 300;
+  padding-top: 20px;
+  font-size: 20px;
+}
 
-  form p {
-    font-weight: 300;
-    padding-top: 10px;
-    font-size: 20px;
-  }
-  .camposObl {
-    font-size: 14px;
-  }
+form p{
+  font-weight: 300;
+  padding-top: 10px;
+  font-size: 20px  
+}
+.camposObl{
+  font-size: 14px;
+}
 
-  .botones.form {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 10px;
-  }
+.botonesForm{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+  
+.campoForm:hover{
+  background-color: rgb(238, 245, 219);
+  box-shadow: 0px 0px 15px 0px  rgb(238, 245, 219);
+  transition: 0.2s;
+}
 
-  .campoform:hover {
-    background-color: rgb(238, 245, 219);
-    box-shadow: 0px 0px 15px 0px rgb(238, 245, 219);
-    transition: 0.2s;
-  }
+.textarea:hover{
+  background-color: rgb(153, 181, 75);
+  box-shadow: 0px 0px 15px 0px  rgb(238, 245, 219);
+  transition: 0.2s;
+}
 
-  .textarea:hover {
-    background-color: rgb(238, 245, 219);
-    box-shadow: 0px 0px 15px 0px rgb(238, 245, 219);
-    transition: 0.2s;
-  }
 
-  .botonesForm {
-    display: flex;
-    justify-content: space-around;
-  }
 
-  .botonForm {
-    background-color: rgb(125, 204, 149);
-    color: rgb(238, 245, 219);
-    font-family: "Josefin Sans", sans-serif;
-    font-size: 25px;
-    font-weight: 300;
-    width: 110px;
-    height: 45px;
-    border: 0;
-    outline: none;
-    border-radius: 20px;
-    margin-top: 10px;
-  }
+.botonForm{
+  background-color:  rgb(53, 187, 129);
+  color: rgb(238, 245, 219); 
+  font-family:"h Halen", sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  width: 120px;
+  height: 70px;
+  border: 0;
+  outline: none;
+  border-radius: 20px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-left: 10px;
+  
+}
 
-  .botonform:hover {
-    color: rgb(68, 130, 87);
-    background-color: rgb(238, 245, 219);
-    transition: 0.1s;
-  }
+.botonForm:hover{
+  color: rgb(13, 93, 48);
+  background-color: rgb(96, 182, 57); 
+  transition: 0.1s; 
+}
 
   /*footer*/
 
@@ -411,9 +415,9 @@ font-family: 'Gotica Moderna KK Italic', sans-serif;
   footer ul li a {
     text-decoration: none;
     color: #f7f7f7;
-    font-size: 0, 5rem;
+    font-size: 15px;
     font-family: "h Halen", sans-serif;
-    margin-inline: 20px 20px 5px 5px;
+    margin-right: 10px;
   }
   .copyright__margen p {
     padding: 5% 0;
