@@ -1,0 +1,284 @@
+@import url('https://fonts.cdnfonts.com/css/h-halen');
+/* font-family: 'h Halen', sans-serif; */
+
+@import url('https://fonts.cdnfonts.com/css/gotica-moderna-kk');
+/* font-family: 'Gotica Moderna KK', sans-serif;
+font-family: 'Gotica Moderna KK Outline', sans-serif;
+font-family: 'Gotica Moderna KK Italic', sans-serif;
+*/
+
+@import url('https://fonts.cdnfonts.com/css/mandela-clashinta');
+/* font-family: 'Mandela Clashinta', sans-serif; */
+                                                
+
+@media screen and (min-width: 320px){
+    
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* navegador */
+nav{
+    display: flex;
+    justify-content: center;
+    box-shadow: 2px 2px 2px #000100;
+    width: 100%;
+    height: 100px;
+    background-image: linear-gradient(120deg,#1ac556 0%,#12760a 100%);
+    
+}
+
+nav ul{
+    width: 100%;
+    height: 100px;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    align-content: center; 
+}
+
+nav ul li{
+    display: inline-block;
+
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #f7f7f7;
+    font-size: 0,5rem;
+    font-family: 'h Halen', sans-serif;
+    margin-inline: 8px 8px 8px 8px ;
+}
+
+/* contenedor de inicio */
+.container{
+    width: 100vw;
+    height: 100dvh;
+    
+}  
+
+.containerVideo{
+    width: 100vw;
+    height: 100dvh;
+    position: relative;
+    overflow: hidden;
+}
+
+.containerVideo video {
+    position: absolute;
+    width: 100vw;
+    height: 100dvh;
+    object-fit: cover;
+    z-index: 1;
+    
+}
+
+h1 {
+    width: 80%;
+    font-family: 'Gotica Moderna KK', sans-serif;;
+    color:  #f0f0f0;
+    position: absolute;
+    font-size: 90px;
+    top: 20%;
+    left: 10%;
+    z-index: 2;
+    font-weight: 900px;
+  
+} 
+ /* sec conocimientos */
+
+ .seccionConocimiento{
+    width: 100%;
+    height: 100%;
+    /* display: flex;
+    flex-direction: column; */
+    padding: 120px 0 80px 0;
+    background-image: url(./img/fondoConocimientos.jpg);
+    background-position: center;
+    background-size: cover; 
+}
+
+.cards{
+    width: 50%;
+    height: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 10px;
+    border: solid 1px rgb(10, 159, 92) ;
+    border-radius: 25px;
+    box-shadow: 0px 0px 15px 0px  rgb(56, 234, 178);
+    font-size: 20px;
+    color: rgb(24, 101, 47) ;
+    background-color: #c6ea84;
+}
+
+.cards:hover{
+    border: solid 1px rgb(107, 159, 10);
+    box-shadow: none;
+    transition: 0.1s;
+    color:  rgb(24, 101, 47);
+} 
+
+.html{
+    color:rgb(229, 77, 38);
+    font-size: 20px;
+}
+
+.css{
+    color: rgb(61, 143, 198);
+    font-size: 20px;
+}
+
+.js{
+    color: rgb(240, 219, 79);
+    font-size: 20px;
+}
+.sass{
+    color: rgb(204, 102, 153);
+    font-size: 20px;
+}
+.git{
+    color: rgb(243, 79, 41);
+    font-size: 20px;
+}
+
+.react{
+    color: aquamarine;
+    font-size: 20px;
+}
+
+.titulo{
+    font-size: 30px;
+    font-weight: 250px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+/* sec proyectos */
+.containerProyectos{
+    display: flex;
+    width: 100vw;
+    flex-direction: column;
+    background-image: linear-gradient(120deg,#1ac556 0%,#12760a 100%);
+}
+
+.gallery_proyectos img{
+    width: 80%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 25px;
+    margin-left: 30px;
+}
+
+
+h3{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-size: 55px;
+  text-decoration: underline;
+  font-family: 'h Halen', sans-serif; ;
+  margin: 20px 20px;
+
+}
+
+.descripcionProyectos{
+    font-size: 25px;
+    font-family: 'h Halen', sans-serif; 
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #f7f7f7;
+}
+
+/*contactame*/
+.conteiner-contacto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    justify-content: space-evenly;
+    border: solid 1px  rgb(7, 168, 71);
+    border-radius: 10px;
+    box-shadow:0px 0px 10px 0px  rgb(5, 200, 115);
+    font-size: 20px;
+    color:  rgb(7, 78, 65);
+}
+
+
+.contactame{
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    font-weight: 300; 
+    line-height: 35px;
+    text-align: justify;
+    padding: 0 20px 0 0;
+}
+
+.margen{
+    margin-top: 30px;  
+}
+
+
+/* iconos redes */
+.lista{
+    list-style: none;
+    font-weight: 400;
+   padding: 20px 0 0 0;
+}
+
+.redes{
+    text-decoration: none;
+    color: rgb(79, 99, 103);
+}
+
+.nombre-red:hover{
+    text-decoration: none;
+    color: rgb(122, 158, 159);
+}
+
+.icono-redes{
+    font-size: 30px;
+    color:rgb(7, 87, 58);
+    background-color: rgb(159, 194, 62);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    padding: 10px 0 0 ;
+}
+
+.icono-redes:hover{
+    color: rgb(68, 88, 15);
+    background-color: rgb(85, 254, 139);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    transition: 0.4s;
+    text-align: center;
+    padding: 10px 0 0 ;
+}
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
