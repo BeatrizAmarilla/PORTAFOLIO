@@ -4,28 +4,38 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portafolio</title>
+    <meta name="description" content="Entra a ver mi portaflio!">
+    <meta name="keywords" content="portafolio,Ada,html,css">
+    <meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
+    <meta name="author" content="Beatriz Amarilla">
+    <meta http-equiv="refresh" content="5;url=#">
     <link rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" href="style.css" />
     <script
       src="https://kit.fontawesome.com/5f812df695.js"
       crossorigin="anonymous"
     ></script>
+    <link rel='stylesheet' href='https://cdn-uicons.flaticon.com/uicons-bold-rounded/css/uicons-bold-rounded.css'>
   </head>
   <body>
     <!-- inicio nav  -->
     <header class="container">
       <a name="INICIO"> </a>
-      <nav>
-        <ul>
+      <nav class="navbar">
+        <h2>Beatriz Amarilla</h2>
+        <input class="checkbox" type="checkbox">
+        <i class="icons fi fi-br-menu-burger"></i>
+        <i class="icons fi fi-br-cross"></i>
+        <ul class="menu">
           <li><a href="#INICIO">INICIO</a></li>
 
           <li><a href="#CONOCIMIENTOS">CONOCIMIENTOS</a></li>
-
+       
           <li><a href="#PROYECTOS">PROYECTOS</a></li>
-
+       
           <li><a href="#CONTACTO">CONTACTO</a></li>
         </ul>
-      </nav>
+    </nav>
       <section class="containerVideo">
         <h1>Hi Everybody!,mi nombre es Beatriz.</h1>
         <div>
@@ -36,9 +46,8 @@
       </section>
     </header>
     <!--conocimientos-->
-    <a name="CONOCIMIENTOS"></a>
     <section class="seccionConocimiento">
-      <h2 class="titulo">MIS CONOCIMIENTOS</h2>
+      <a name="CONOCIMIENTOS"><h4 class="tituloConocimiento">MIS CONOCIMIENTOS</h4></a>
       <div class="cards">
         <p class="html"><i class="fab fa-html5"></i></p>
         HTML
@@ -71,7 +80,7 @@
     <!-- sec proyectos-->
     <section>
       <div class="containerProyectos">
-        <a name="PROYECTOS"><h3>PROYECTOS</h3></a>
+        <a name="PROYECTOS"><h4>PROYECTOS</h4></a>
         <figure class="gallery_proyectos">
           <img src="./img/portafolio.jpg" alt="portafolio" />
           <p class="descripcionProyectos">Portfolio</p>
@@ -107,7 +116,7 @@
     <section class="conteinerContacto">
       <div class="contacto">
         <div class="contactame">
-          <h4 class="contactameTitulo">Contactame</h4>
+          <h5 class="contactameTitulo">Contactame</h5>
           <p class="textoContactame">
             "La verdad sólo se puede encontrar en un lugar:el código."
           </p>
@@ -162,7 +171,7 @@
        <!--escribime-->
        <a name="CONTACTO"></a>
        <div class="escribime">
-        <h5 class="tituloEscribime">Escribime</h5>
+        <h6 class="tituloEscribime">Escribime</h6>
         <form class="formulario" action="formulario">
           <div class="margenForm datos">
             <div class="campo-nom-y-ap">
