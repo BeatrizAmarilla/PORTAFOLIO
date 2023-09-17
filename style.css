@@ -194,12 +194,13 @@ font-family: 'Gotica Moderna KK Italic', sans-serif;
   /*contactame*/
   .conteinerContacto {
     width: 100%;
+  
     display: flex;
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
     border: solid 1px rgb(7, 168, 71);
-    box-shadow: 0px 0px 10px 0px rgb(5, 200, 115);
+    /* box-shadow: 0px 0px 10px 0px rgb(5, 200, 115); */
     font-size: 20px;
     color: rgb(7, 78, 65);
     background-color: #e4e38a;
@@ -212,9 +213,10 @@ font-family: 'Gotica Moderna KK Italic', sans-serif;
     justify-content: space-evenly;
     border: solid 1px rgb(28, 200, 5);
     border-radius: 10px;
-    box-shadow: 0px 0px 10px 0px rgb(3, 152, 60);
+    box-shadow: 0px 0px 10px 0px rgb(3, 152, 60); 
     font-size: 20px;
     color: rgb(34, 81, 7);
+    margin-top: 30px;
   }
 
   .contactame {
@@ -257,6 +259,7 @@ font-family: 'Gotica Moderna KK Italic', sans-serif;
     border-radius: 50%;
     text-align: center;
     padding: 10px 0 0;
+    margin: 5px;
   }
 
   .iconoRedes:hover {
@@ -433,11 +436,6 @@ form p{
     top: 30%;
   }
 
-  .seccionConocimiento {
-    flex-direction: column;
-    align-items: center;
-  }
-
   .gallery_proyectos img {
     width: 80%;
     height: 180px;
@@ -447,18 +445,13 @@ form p{
     object-position: center;
   }
 
-  .conteiner_contacto {
-    width: 100%;
+  .textoContactame{
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
-    border: solid 1px rgb(7, 168, 71);
-    box-shadow: 0px 0px 10px 0px rgb(5, 200, 115);
-    font-size: 20px;
-    color: rgb(7, 78, 65);
-    background-color: #e0dd18;
+    justify-content: center;
+    text-align: center;
+    margin: 5px;
   }
+
 }
 
 @media screen and (min-width: 1024px) {
