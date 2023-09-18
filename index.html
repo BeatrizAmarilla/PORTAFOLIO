@@ -1,16 +1,15 @@
 <!doctype html>
 <html lang="es">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Portafolio</title>
     <meta name="description" content="Entra a ver mi portaflio!">
     <meta name="keywords" content="portafolio,Ada,html,css">
-    <meta http-equiv="content-type" content="text/html;charset=iso-8859-1">
     <meta name="author" content="Beatriz Amarilla">
-    <meta http-equiv="refresh" content="5;url=#">
-    <link rel="stylesheet" href="normalize.css" />
-    <link rel="stylesheet" href="style.css" />
+    <!-- <meta http-equiv="refresh" content="5"> -->
+    <link rel="stylesheet" href="normalize.css"/>
+    <link rel="stylesheet" href="style.css"/>
     <script
       src="https://kit.fontawesome.com/5f812df695.js"
       crossorigin="anonymous"
@@ -19,9 +18,9 @@
   </head>
   <body>
     <!-- inicio nav  -->
-    <header class="container">
-      <a name="INICIO"> </a>
-      <nav class="navbar">
+    <header class="header">
+      <a id="INICIO"> </a>
+      <nav class="nav">
         <h2>Beatriz Amarilla</h2>
         <input class="checkbox" type="checkbox">
         <i class="icons fi fi-br-menu-burger"></i>
@@ -35,100 +34,104 @@
        
           <li><a href="#CONTACTO">CONTACTO</a></li>
         </ul>
-    </nav>
-      <section class="containerVideo">
+      </nav>
+      <section class="header__video">
         <h1>Hi Everybody!,mi nombre es Beatriz.</h1>
         <div>
           <video loop autoplay muted>
-            <source src="./img/videofondo.mp4" type="video/mp4" />
+            <source src="./img/videofondo.mp4" type="video/mp4"/>
           </video>
         </div>
       </section>
     </header>
     <!--conocimientos-->
     <section class="seccionConocimiento">
-      <a name="CONOCIMIENTOS"><h4 class="tituloConocimiento">MIS CONOCIMIENTOS</h4></a>
-      <div class="cards">
-        <p class="html"><i class="fab fa-html5"></i></p>
-        HTML
-      </div>
-      <div class="cards">
-        <p class="css"><i class="fab fa-css3-alt"></i></p>
-        CSS
-      </div>
+      <a id="CONOCIMIENTOS"><h4 class="seccionConocimiento__titulo">MIS CONOCIMIENTOS</h4></a>
+      <div class="seccionConocimiento__container">
+        <div class="seccionConocimiento__cards">
+          <p class="html"><i class="fab fa-html5"></i></p>
+          HTML
+        </div>
+        <div class="seccionConocimiento__cards">
+          <p class="css"><i class="fab fa-css3-alt"></i></p>
+          CSS
+        </div>
 
-      <div class="cards">
-        <p class="sass"><i class="fab fa-sass"></i></p>
-        SASS
-      </div>
+        <div class="seccionConocimiento__cards">
+          <p class="sass"><i class="fab fa-sass"></i></p>
+          SASS
+        </div>
 
-      <div class="cards">
-        <p class="js"><i class="fab fa-js"></i></p>
-        JS
-      </div>
+        <div class="seccionConocimiento__cards">
+          <p class="js"><i class="fab fa-js"></i></p>
+          JS
+        </div>
 
-      <div class="cards">
-        <p class="git"><i class="fab fa-git-alt"></i></p>
-        GIT HUB
-      </div>
+        <div class="seccionConocimiento__cards">
+          <p class="git"><i class="fab fa-git-alt"></i></p>
+          GIT HUB
+        </div>
 
-      <div class="cards">
-        <p class="react"><i class="fab fa-react"></i></p>
-        REACT
+        <div class="seccionConocimiento__cards">
+          <p class="react"><i class="fab fa-react"></i></p>
+          REACT
+        </div>
       </div>
     </section>
     <!-- sec proyectos-->
     <section>
       <div class="containerProyectos">
-        <a name="PROYECTOS"><h4>PROYECTOS</h4></a>
-        <figure class="gallery_proyectos">
-          <img src="./img/portafolio.jpg" alt="portafolio" />
-          <p class="descripcionProyectos">Portfolio</p>
-        </figure>
+        <a id="PROYECTOS"><h4>PROYECTOS</h4></a>
+        <div class="containerProyectos__gallery">
+          <figure class="gallery_proyectos">
+            <img src="./img/portafolio.jpg" alt="portafolio"/>
+            <p class="containerProyectos__gallery--descripcion">Portfolio</p>
+          </figure>
 
-        <figure class="gallery_proyectos">
-          <img src="./img/generadorMemes.jpg" alt="EditorMemes" />
-          <p class="descripcionProyectos">Editor de memes</p>
-        </figure>
+          <figure class="gallery_proyectos">
+            <img src="./img/generadorMemes.jpg" alt="EditorMemes"/>
+            <p class="containerProyectos__gallery--descripcion">Editor de memes</p>
+          </figure>
 
-        <figure class="gallery_proyectos">
-          <img src="./img/matcheadas.jpg" alt="matcheadas" />
-          <p class="descripcionProyectos">Matcheadas</p>
-        </figure>
+          <figure class="gallery_proyectos">
+            <img src="./img/matcheadas.jpg" alt="matcheadas"/>
+            <p class="containerProyectos__gallery--descripcion">Matcheadas</p>
+          </figure>
 
-        <figure class="gallery_proyectos">
-          <img src="./img/ahorradas.jpg" alt="ahorradas" />
-          <p class="descripcionProyectos">Ahorradas</p>
-        </figure>
+          <figure class="gallery_proyectos">
+            <img src="./img/ahorradas.jpg" alt="ahorradas"/>
+            <p class="containerProyectos__gallery--descripcion">Ahorradas</p>
+          </figure>
 
-        <figure class="gallery_proyectos">
-          <img src="./img/comics.jpg" alt="comics" />
-          <p class="descripcionProyectos">Buscador de comics</p>
-        </figure>
+          <figure class="gallery_proyectos">
+            <img src="./img/comics.jpg" alt="comics"/>
+            <p class="containerProyectos__gallery--descripcion">Buscador de comics</p>
+          </figure>
 
-        <figure class="gallery_proyectos">
-          <img src="./img/peliculas.jpg" alt="peliculas" />
-          <p class="descripcionProyectos">Peliculas React</p>
-        </figure>
+          <figure class="gallery_proyectos">
+            <img src="./img/peliculas.jpg" alt="peliculas"/>
+            <p class="containerProyectos__gallery--descripcion">Peliculas React</p>
+          </figure>
+        </div>
       </div>
     </section>
     <!--contactame-->
     <section class="conteinerContacto">
-      <div class="contacto">
-        <div class="contactame">
-          <h5 class="contactameTitulo">Contactame</h5>
-          <p class="textoContactame">
+      <div class="conteinerContacto__contacto">
+        <div class="conteinerContacto__contacto--contactame">
+          <h5 class="conteinerContacto__contacto--titulo">Contactame:</h5>
+          <p class="conteinerContacto__contacto--contactame--texto">
             "La verdad sólo se puede encontrar en un lugar:el código."
           </p>
-          <p class="textoContactame">
+          <p class="conteinerContacto__contacto--contactame--texto">
             Programemos juntos!Contactame en mis redes:
           </p>
 
-          <div class="containerLista">
+          <div class="conteinerContacto__containerLista">
             <ul>
               <li>
                 <a
-                  class="redes"
+                  class="conteinerContacto__containerLista--redes"
                   href="https://github.com/B24-prog"
                   target="blanck"
                 >
@@ -139,7 +142,7 @@
 
               <li>
                 <a
-                  class="redes"
+                  class="conteinerContacto__containerLista--redes"
                   href="https://twitter.com/@BettyAma24"
                   target="blanck"
                 >
@@ -150,7 +153,7 @@
 
               <li>
                 <a
-                  class="redes"
+                  class="conteinerContacto__containerLista--redes"
                   href="https://www.linkedin.com/in/normabeatriz-amarilla"
                   target="blanck"
                 >
@@ -160,7 +163,8 @@
               </li>
 
               <li>
-                <a class="redes" href="mailto:betty.182.186@gmail.com"
+                <a class="conteinerContacto__containerLista--redes
+                " href="mailto:betty.182.186@gmail.com"
                   ><i class="iconoRedes fas fa-envelope"></i> Gmail
                 </a>
               </li>
@@ -169,57 +173,51 @@
         </div>
       </div>
        <!--escribime-->
-       <a name="CONTACTO"></a>
-       <div class="escribime">
-        <h6 class="tituloEscribime">Escribime</h6>
+       <a id="CONTACTO"></a>
+      <div class="conteinerContacto__escribime">
+        <h6 class="conteinerContacto__escribime--titulo">Escribime:</h6>
         <form class="formulario" action="formulario">
-          <div class="margenForm datos">
-            <div class="campo-nom-y-ap">
+          <div class="formulario__margen datos">
+            <div class="formulario__nombre">
               <label for="nombre">Nombre ():</label>
-              <br />
               <input
                 type="text"
                 name="nombre"
                 id="nombre"
                 placeholder="Ej:Ada"
                 required
-                class="campoform-nombreyapellido"
-              />
+                class="formulario__nombreyapellido"/>
             </div>
 
-            <div class="campo-nom-y-ap">
+            <div class="formulario__apellido">
               <label for="apellido">Apellido ():</label>
-              <br />
               <input
                 type="text"
                 name="apellido"
                 id="apellido"
                 placeholder="Ej: Lovelace"
                 required
-                class="campoform-nombreyapellido"
-              />
+                class="formulario__nombreyapellido"/>
             </div>
           </div>
 
-          <label class="margenForm" for="email">Email (*):</label>
+          <label class="formulario__margen" for="email">Email (*):</label>
           <input
             type="email"
             name="email"
             id="email"
             placeholder="Ej:adalovelace@gmail.com"
             required
-            class="campoForm"
-          />
-          <label class="margenForm" for="telefono">Telefono</label>
+            class="formulario__campo"/>
+          <label class="formulario__margen" for="telefono">Telefono</label>
           <input
             type="number"
             name="telefono"
             id="telefono"
             placeholder="Ej: 0303-45600"
-            class="campoForm"
-          />
+            class="formulario__campo"/>
 
-          <label class="margenForm" for="mensaje">Mensaje:</label>
+          <label class="formulario__margen" for="mensaje">Mensaje:</label>
           <textarea
             class="textarea"
             name="mensaje"
@@ -227,14 +225,13 @@
             cols="30"
             rows="5"
             placeholder="Escriba aqui su mensaje."
-            maxlength="600"
-          ></textarea>
+            maxlength="600"></textarea>
 
           <p class="camposObl">(*) Campos Obligatorios</p>
 
-          <div class="botonesForm margenForm">
-            <input type="submit" value="Enviar" class="botonForm" />
-            <input type="reset" value="Borrar" class="botonForm" />
+          <div class="formulario__botones formulario__margen">
+            <input type="submit" value="Enviar" class="formulario__botones--boton"/>
+            <input type="reset" value="Borrar" class="formulario__botones--boton"/>
           </div>
         </form>
       </div>

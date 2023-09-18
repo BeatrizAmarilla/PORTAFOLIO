@@ -19,46 +19,49 @@ font-family: 'Gotica Moderna KK Italic', sans-serif;
     list-style: none;
   }
   /* navegador */
-  .navbar{
+  .nav {
+    width: 100%;
     height: 48px;
     position: relative;
+    position: fixed;
     padding: 10px 12px;
     font-family: "h Halen", sans-serif;
     color: #f7f7f7;
     box-shadow: 2px 2px 2px #000100;
-    background-color: green;
-}
+    background-color: rgb(2, 138, 2);
+    z-index: 1000;
+  }
 
-.checkbox, .icons{
+  .checkbox,
+  .icons {
     width: 24px;
     height: 24px;
     position: absolute;
-    top:10px;
+    top: 10px;
     right: 12px;
     cursor: pointer;
-}
+  }
 
-.icons{
+  .icons {
     pointer-events: none;
     font-size: 24px;
-}
- .checkbox{
+  }
+  .checkbox {
     opacity: 0;
- }
+  }
 
- .fi-br-cross{
+  .fi-br-cross {
     display: none;
- }
+  }
 
-
- .checkbox:checked ~ .fi-br-menu-burger{
+  .checkbox:checked ~ .fi-br-menu-burger {
     display: none;
- }
+  }
 
- .checkbox:checked ~ .fi-br-cross{
+  .checkbox:checked ~ .fi-br-cross {
     display: block;
- }
- .menu{
+  }
+  .menu {
     border-radius: 10px;
     width: 200px;
     position: absolute;
@@ -66,40 +69,38 @@ font-family: 'Gotica Moderna KK Italic', sans-serif;
     z-index: 3;
     right: 0;
     color: #e5f2e5;
-    background-color: green;
+    background-color: rgb(2, 138, 2);
     padding: 10px 12px;
     border: 1px solid #000100;
     /* display: none; */
     transition: 250ms;
-   
- }
+  }
 
-.menu li a{
+  .menu li a {
     display: block;
     color: #ffffff;
     font-size: 20px;
     margin-right: 20px;
-    
-}
+  }
 
-.checkbox:checked ~ .menu{
+  .checkbox:checked ~ .menu {
     top: 48px;
- }
+  }
 
   /* contenedor de inicio */
-  .container {
+  .header {
     width: 100vw;
     height: 100dvh;
   }
 
-  .containerVideo {
+  .header__video {
     width: 100vw;
     height: 100dvh;
     position: relative;
     overflow: hidden;
   }
 
-  .containerVideo video {
+  .header__video video {
     position: absolute;
     width: 100vw;
     height: 100dvh;
@@ -126,14 +127,18 @@ font-family: 'Gotica Moderna KK Italic', sans-serif;
     height: 100%;
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-direction: column;
     padding: 120px 0 80px 0;
     background-image: url(./img/fondoConocimientos.jpg);
     background-position: center;
     background-size: cover;
   }
-
-  .cards {
+  .seccionConocimiento__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .seccionConocimiento__cards {
     width: 35%;
     height: 4rem;
     display: flex;
@@ -146,25 +151,28 @@ font-family: 'Gotica Moderna KK Italic', sans-serif;
     box-shadow: 0px 0px 15px 0px rgb(56, 234, 178);
     font-size: 20px;
     color: rgb(24, 101, 47);
-    background-color: #ffffff;
+    background-color: #eee7e7;
   }
 
-  .cards:hover {
+  .seccionConocimiento__cards:hover {
     border: solid 1px rgb(107, 159, 10);
     box-shadow: none;
     transition: 0.1s;
     color: rgb(24, 101, 47);
   }
 
-  .tituloConocimiento {
+  .seccionConocimiento__titulo {
     font-size: 30px;
     font-weight: 250px;
     display: flex;
     justify-content: center;
     text-align: center;
-    
-  } 
-
+  }
+  .containerProyectos__gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
   .html {
     color: rgb(229, 77, 38);
     font-size: 20px;
@@ -193,7 +201,6 @@ font-family: 'Gotica Moderna KK Italic', sans-serif;
     font-size: 20px;
   }
 
- 
   /* sec proyectos */
   .containerProyectos {
     display: flex;
@@ -201,13 +208,25 @@ font-family: 'Gotica Moderna KK Italic', sans-serif;
     flex-direction: column;
     background-image: linear-gradient(120deg, #1ac556 0%, #12760a 100%);
   }
-
+  .containerProyectos__gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 10%;
+  }
+  .gallery_proyectos{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      gap: 15px;
+    } 
   .gallery_proyectos img {
     width: 80%;
     height: 150px;
     object-fit: cover;
     border-radius: 25px;
-    margin-left: 30px;
+    gap: 15px;
   }
 
   h4 {
@@ -220,11 +239,9 @@ font-family: 'Gotica Moderna KK Italic', sans-serif;
     margin: 20px 20px;
   }
 
-  .descripcionProyectos {
-    font-size: 25px;
+  .containerProyectos__gallery--descripcion{
+    font-size: 1.5rem;
     font-family: "h Halen", sans-serif;
-    display: flex;
-    justify-content: center;
     text-align: center;
     color: #f7f7f7;
   }
@@ -232,32 +249,30 @@ font-family: 'Gotica Moderna KK Italic', sans-serif;
   /*contactame*/
   .conteinerContacto {
     width: 100%;
-  
     display: flex;
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
     border: solid 1px rgb(7, 168, 71);
-    /* box-shadow: 0px 0px 10px 0px rgb(5, 200, 115); */
     font-size: 20px;
     color: rgb(7, 78, 65);
     background-color: #e4e38a;
   }
 
-  .contacto {
+  .conteinerContacto__contacto {
     display: flex;
     flex-direction: row;
     width: 90%;
     justify-content: space-evenly;
     border: solid 1px rgb(28, 200, 5);
     border-radius: 10px;
-    box-shadow: 0px 0px 10px 0px rgb(3, 152, 60); 
+    box-shadow: 0px 0px 10px 0px rgb(3, 152, 60);
     font-size: 20px;
     color: rgb(34, 81, 7);
     margin-top: 30px;
   }
 
-  .contactame {
+  .conteinerContacto__contacto--contactame {
     display: flex;
     flex-direction: column;
     text-align: justify;
@@ -267,20 +282,23 @@ font-family: 'Gotica Moderna KK Italic', sans-serif;
     margin-top: 30px;
   }
 
-  .contactameTitulo {
+  .conteinerContacto__contacto--titulo{
     font-size: 2rem;
   }
 
-  .textoContactame {
+  .conteinerContacto__contacto--contactame--texto {
     width: 90%;
+    /* display: flex;
+    justify-content: center;
+    text-align: center; */
   }
-  .containerLista {
+  .conteinerContacto__containerLista{
     display: flex;
   }
 
   /* iconos redes */
 
-  .redes {
+  .conteinerContacto__containerLista--redes {
     text-decoration: none;
     color: rgb(79, 99, 103);
     list-style: none;
@@ -311,121 +329,117 @@ font-family: 'Gotica Moderna KK Italic', sans-serif;
     padding: 10px 0 0;
   }
   /*formulario contacto*/
-.escribime{
-  width: 90%;
-  display: flex;
-  flex-direction: column;
-  
-}
-.tituloEscribime{
-  font-size: 40px;
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  margin-top: 30px;
-}
+  .conteinerContacto__escribime{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+  }
+  .conteinerContacto__escribime--titulo {
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 30px;
+  }
 
-.formulario{
-  height: 90%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding-top: 10px;
-}
-.margenForm{
-  margin-top: 10px;
-}
-.datos{
-  display: flex;
-}
+  .formulario {
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-top: 10px;
+  }
+  .formulario__margen {
+    margin-top: 10px;
+  }
+  .datos {
+    display: flex;
+  }
 
-.campo-nom-y-ap{
- flex-grow: 1;    
-}
+  .formulario__nombre, .formulario__apellido {
+    flex-grow: 1;
+  }
 
-.campoForm, .campoform-nombreyapellido{
-  background-color: rgb(53, 187, 129);
-  border: 0;
-  outline: none;
-  height: 40px;
-  border-radius: 10px;
-  padding-left: 15px;
-  font-size: 15px;
-}
+  .formulario__campo,
+  .formulario__nombreyapellido {
+    background-color: rgb(53, 187, 129);
+    border: 0;
+    outline: none;
+    height: 40px;
+    border-radius: 10px;
+    padding-left: 15px;
+    font-size: 15px;
+  }
 
+  .formulario__nombreyapellido{
+    width: 100%;
+  }
 
-.campoform-nombreyapellido{
-  width: 100%;
-}
+  .textarea {
+    background-color: rgb(53, 187, 129);
+    border: 0;
+    border-radius: 20px;
+    outline: none;
+    padding: 10px 0 0 15px;
+    font-size: 15px;
+  }
 
-.textarea{
-  background-color: rgb(53, 187, 129);
-  border: 0;
-  border-radius: 20px;
-  outline: none;
-  padding: 10px 0 0 15px;
-  font-size: 15px;
-}
+  form label {
+    font-weight: 300;
+    padding-top: 20px;
+    font-size: 20px;
+  }
 
-form label{
-  font-weight: 300;
-  padding-top: 20px;
-  font-size: 20px;
-}
+  form p {
+    font-weight: 300;
+    padding-top: 10px;
+    font-size: 20px;
+  }
+  .camposObl {
+    font-size: 14px;
+  }
 
-form p{
-  font-weight: 300;
-  padding-top: 10px;
-  font-size: 20px  
-}
-.camposObl{
-  font-size: 14px;
-}
+  .formulario__botones {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
 
-.botonesForm{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  margin-bottom: 10px;
-}
-  
-.campoForm:hover{
-  background-color: rgb(238, 245, 219);
-  box-shadow: 0px 0px 15px 0px  rgb(238, 245, 219);
-  transition: 0.2s;
-}
+  .formulario__campo:hover {
+    background-color: rgb(238, 245, 219);
+    box-shadow: 0px 0px 15px 0px rgb(238, 245, 219);
+    transition: 0.2s;
+  }
 
-.textarea:hover{
-  background-color: rgb(153, 181, 75);
-  box-shadow: 0px 0px 15px 0px  rgb(238, 245, 219);
-  transition: 0.2s;
-}
+  .textarea:hover {
+    background-color: rgb(153, 181, 75);
+    box-shadow: 0px 0px 15px 0px rgb(238, 245, 219);
+    transition: 0.2s;
+  }
 
+  .formulario__botones--boton{
+    background-color: rgb(53, 187, 129);
+    color: rgb(238, 245, 219);
+    font-family: "h Halen", sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    width: 120px;
+    height: 70px;
+    border: 0;
+    outline: none;
+    border-radius: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+  }
 
-
-.botonForm{
-  background-color:  rgb(53, 187, 129);
-  color: rgb(238, 245, 219); 
-  font-family:"h Halen", sans-serif;
-  font-size: 20px;
-  font-weight: 300;
-  width: 120px;
-  height: 70px;
-  border: 0;
-  outline: none;
-  border-radius: 20px;
-  margin-top: 10px;
-  margin-bottom: 20px;
-  margin-left: 10px;
-  
-}
-
-.botonForm:hover{
-  color: rgb(13, 93, 48);
-  background-color: rgb(96, 182, 57); 
-  transition: 0.1s; 
-}
+  .formulario__botones--boton:hover {
+    color: rgb(13, 93, 48);
+    background-color: rgb(96, 182, 57);
+    transition: 0.1s;
+  }
 
   /*footer*/
 
@@ -435,7 +449,6 @@ form p{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 30px 0 0 0;
     background-image: linear-gradient(120deg, #1ac556 0%, #12760a 100%);
   }
 
@@ -466,62 +479,78 @@ form p{
 }
 
 @media screen and (min-width: 768px) {
-  .checkbox, .fi-br-menu-burger,.fi-br-cross{
+  .checkbox,
+  .fi-br-menu-burger,
+  .fi-br-cross {
     display: none;
-}
-.menu{
+  }
+  .menu {
     top: 0;
     z-index: 1;
     width: unset;
     display: flex;
     height: 48px;
-    background-color:green;
-    padding: 12px 12px 12px 12px ;
+    background-color: green;
+    padding: 12px 12px 12px 12px;
     margin-inline: 5px 5px 5px 5px;
     border: none;
     transition: none;
-}
-
-
+  }
 
   h1 {
     top: 30%;
   }
-
-  .gallery_proyectos img {
-    width: 80%;
-    height: 180px;
-    object-fit: cover;
-    border-radius: 25px;
-    margin-left: 60px;
-    object-position: center;
+  .gallery_proyectos {
+    width: 45%;
   }
-
-  .textoContactame{
+  
+  .conteinerContacto__contacto--contactame--texto {
     display: flex;
     justify-content: center;
-    text-align: center;
-    margin: 5px;
+    text-align: center; 
   }
 
 }
 
 @media screen and (min-width: 1024px) {
-  nav ul li a {
-    font-size: 35px;
-  }
 
   h1 {
     top: 20%;
     font-size: 130px;
   }
 
-  .gallery_proyectos img {
-    margin-left: 80px;
+  .containerProyectos__gallery {
+    margin-right: 30px;
   }
 
-  .descripcionProyectos {
+  .containerProyectos__gallery--descripcion {
     font-size: 35px;
     margin: 10px 10px;
   }
+  .seccionConocimiento__titulo {
+    font-size: 60px;
+    margin-bottom: 70px;
+  
+  }
+  .conteinerContacto__contacto--titulo{
+    font-size: 4rem;
+  }
+
+   .conteinerContacto__escribime--titulo {
+    font-size: 4rem;
+  }
+
+  footer ul li a {
+    text-decoration: none;
+    color: #f7f7f7;
+    font-size: 30px;
+    font-family: "h Halen", sans-serif;
+    margin-right: 10px;
+  }
+  .copyright__margen p {
+    padding: 5% 0;
+    font-size: 25px;
+  }
+
+
 }
