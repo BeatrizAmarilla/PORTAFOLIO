@@ -117,7 +117,7 @@ font-family: 'Gotica Moderna KK Italic', sans-serif;
     top: 10%;
     left: 10%;
     z-index: 2;
-    font-weight: 900px;
+    font-weight: 7rem;
     text-align: center;
   }
   /* sec conocimientos */
@@ -163,7 +163,7 @@ font-family: 'Gotica Moderna KK Italic', sans-serif;
 
   .seccionConocimiento__titulo {
     font-size: 30px;
-    font-weight: 250px;
+    font-weight: 10rem;
     display: flex;
     justify-content: center;
     text-align: center;
@@ -288,9 +288,6 @@ font-family: 'Gotica Moderna KK Italic', sans-serif;
 
   .conteinerContacto__contacto--contactame--texto {
     width: 90%;
-    /* display: flex;
-    justify-content: center;
-    text-align: center; */
   }
   .conteinerContacto__containerLista{
     display: flex;
@@ -492,7 +489,7 @@ font-family: 'Gotica Moderna KK Italic', sans-serif;
     height: 48px;
     background-color: green;
     padding: 12px 12px 12px 12px;
-    margin-inline: 5px 5px 5px 5px;
+    margin-inline: 5px 5px;
     border: none;
     transition: none;
   }
